@@ -1,0 +1,19 @@
+.header {
+  width: 100vw;
+  height: 120px;
+  background: rgba(130, 255, 130, 0.7);
+  z-index: 1;
+  .title {
+    color: #cbc;
+    padding-left: 20px;
+    display: block;
+    &__1 {
+      font-size: 44px;
+      font-weight: bold;
+    }
+    &__2 {
+      padding-left: 80px;
+      font-size: 26px;
+    }
+  }
+}

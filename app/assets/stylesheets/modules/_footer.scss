@@ -1,0 +1,36 @@
+.footer {
+  width: 100vw;
+  height: 140px;
+  background: rgba(130, 255, 130, 0.7);
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  .fragrance-note {
+    padding-top: 30px;
+    padding-left: 300px;
+    display: flex;
+    &__title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    &__explain {
+      padding-left: 10px;
+    }
+  }
+  .fragrance-type {
+    padding-top: 10px;
+    padding-left: 300px;
+    display: flex;
+    &__title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    &__explain {
+      padding-left: 10px;
+    }
+  }
+  .project-name {
+    float: right;
+    padding-right: 20px;
+  }
+}
