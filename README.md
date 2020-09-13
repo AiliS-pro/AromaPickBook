@@ -22,27 +22,15 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-## adminsテーブル
-|Column|Type|Option|
-|------|----|------|
-|admin_name|string|null :false|
-|password|string|null :false|
-
-### Association
-- has_many :aromas
 
 
 ## aromasテーブル
 
 |Column|Type|Option|
 |------|----|------|
-|admin_id|integer|foreign_key :true, null :false|
 |name|string|null :false|
-|family_name|string|null :false|
-|fragrance_note|string|null :false|
-|fragrance_type|string|null :false|
-|explain_text|text|null :false|
+|family_name|string|
+|fragrance_note|string|
+|fragrance_type|string|
+|explain_text|text|
 |img|longblob|null :false|
-
-### Association
-- belongs_to :admin
