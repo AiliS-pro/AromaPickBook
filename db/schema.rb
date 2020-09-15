@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2020_09_13_145412) do
     t.string "fragrance_note"
     t.string "fragrance_type"
     t.text "explain_text"
-    t.binary "img", size: :long, null: false
+    t.string "image", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
