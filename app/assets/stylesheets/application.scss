@@ -1,5 +1,7 @@
-.body {
-  min-height: 100vh;
+.wrapper {
+  min-height: calc(100vh - 140px);
+  position: relative;
+  padding-bottom: 140px;
 }
 @import "reset";
 @import "settings";

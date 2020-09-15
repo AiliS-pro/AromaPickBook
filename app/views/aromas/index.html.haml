@@ -1,4 +1,37 @@
-= render "header"
-.index
-  この中はページごとに編集
-= render "footer"
+.wrapper
+  = render "header"
+
+  .index-main
+    .items
+      .item
+        .item__img
+        .item__name
+        .item__btns
+          .edit-btn
+          .delete-btn
+      .item
+        .item__img
+        .item__name
+        .item__btns
+          .edit-btn
+          .delete-btn
+      .item
+        .item__img
+        .item__name
+        .item__btns
+          .edit-btn
+          .delete-btn
+      -# .item
+      -#   .item__img
+      -#   .item__name
+      -#   .item__btns
+      -#     .edit-btn
+      -#     .delete-btn
+      -# .item
+      -#   .item__img
+      -#   .item__name
+      -#   .item__btns
+      -#     .edit-btn
+      -#     .delete-btn
+
+  = render "footer"
