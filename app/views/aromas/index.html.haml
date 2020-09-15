@@ -12,7 +12,7 @@
             = aroma.name
           .item__btns
             = link_to "編集", edit_aroma_path(aroma.id), class: "edit-btn"
-            .delete-btn
-              削除
+            = link_to "削除", aroma_path(aroma.id), class: "delete-btn", method: :delete
+              
 
   = render "footer"

@@ -25,6 +25,12 @@ class AromasController < ApplicationController
     redirect_to root_path
   end
 
+  def destroy
+    aroma = Aroma.find(params[:id])
+    aroma.destroy
+    redirect_to root_path
+  end
+
   private
   def aroma_params
     params.require(:aroma).permit(:name, :family_name, :fragrance_note, :fragrance_type, :explain_text, :image)
