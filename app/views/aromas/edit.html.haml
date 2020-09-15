@@ -2,7 +2,7 @@
 
   = render "header"
 
-  .new-main
+  .main
     .table
       = form_with model: @aroma, local: true do |f|
         .table__picture
@@ -17,7 +17,6 @@
           = f.text_field :fragrance_type, placeholder: "香りのタイプ(16文字まで)", class: "input", required: "required"
         .table__text
           = f.text_area :explain_text, placeholder: "テキスト(100文字まで)", class: "input-text", require: "required"
-        .new-btn
-          = f.submit "変更"
+        = f.submit "追加", class: "submit-btn"
 
   = render "footer"

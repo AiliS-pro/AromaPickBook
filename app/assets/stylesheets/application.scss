@@ -2,10 +2,12 @@
   min-height: calc(100vh - 140px);
   position: relative;
   padding-bottom: 140px;
+  background: rgba(130, 255, 130, 0.01);
 }
 @import "reset";
 @import "settings";
 @import "modules/header";
 @import "modules/footer";
 @import "modules/index";
-@import "modules/new";
+@import "modules/detail-table";
+@import "modules/show";

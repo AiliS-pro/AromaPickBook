@@ -6,8 +6,8 @@
     .items
       - @aromas.each do |aroma|
         .item
-          .item__img
-            -# = image_tag aroma.image.url
+          = link_to aroma_path(aroma.id), class: "item__img" do
+            .item__img
           .item__name 
             = aroma.name
           .item__btns

@@ -1,0 +1,63 @@
+.main {
+  width: 600px;
+  height: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.show-table {
+  width: 600px;
+  background: rgba(130, 255, 130, 0.5);
+  &__picture {
+    width: 600px;
+    height: 450px;
+    background-color: aqua;
+  }
+  &__name {
+    margin-top: 10px;
+    width: 598px;
+    height: 80px;
+    line-height: 80px;
+    border: 1px solid black;
+    display: flex;
+  }
+  &__family-name {
+    margin-top: 10px;
+    width: 598px;
+    height: 80px;
+    line-height: 80px;
+    border: 1px solid black;
+    display: flex;
+  }
+  &__fragrance-note {
+    margin-top: 10px;
+    width: 598px;
+    height: 80px;
+    line-height: 80px;
+    border: 1px solid black;
+    display: flex;
+  }
+  &__fragrance-type {
+    margin-top: 10px;
+    width: 598px;
+    height: 80px;
+    line-height: 80px;
+    border: 1px solid black;
+    display: flex;
+  }
+  &__text {
+    margin-top: 10px;
+    width: 598px;
+    height: 80px;
+    border: 1px solid black;
+    display: flex;
+  }
+  .part-title {
+    padding: 0 5px;
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: 80px;
+    border-right: 1px solid black;
+    font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  }
+}

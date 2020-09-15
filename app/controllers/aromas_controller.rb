@@ -31,6 +31,10 @@ class AromasController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    @aroma = Aroma.find(params[:id])
+  end
+
   private
   def aroma_params
     params.require(:aroma).permit(:name, :family_name, :fragrance_note, :fragrance_type, :explain_text, :image)

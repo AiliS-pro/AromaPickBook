@@ -1,4 +1,4 @@
-.new-main {
+.main {
   width: 600px;
   height: 1200px;
   margin: 0 auto;
@@ -55,13 +55,14 @@
   font-size: 20px; 
   resize: none;
 }
-.new-btn {
+.submit-btn {
   width: 600px;
   height: 80px;
-  background-color: darkmagenta;
-  background: rgba(130, 255, 130, 0.7);
+  background: rgba(130, 255, 130, 0.9);
   line-height: 80px;
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
   margin-top: 80px;
+  border: 1px solid black;
+  border-radius: 8px;
 }

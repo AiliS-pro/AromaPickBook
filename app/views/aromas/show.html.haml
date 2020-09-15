@@ -1,0 +1,29 @@
+.wrapper
+
+  = render "header"
+
+  .main
+    .show-table
+      .show-table__picture
+        写真
+      .show-table__name
+        .part-title
+          　名　前　
+        = @aroma.name
+      .show-table__family-name
+        .part-title
+          　科　名　
+        = @aroma.family_name
+      .show-table__fragrance-note
+        .part-title
+          　ノート　
+        = @aroma.fragrance_note
+      .show-table__fragrance-type
+        .part-title
+          香りタイプ
+        = @aroma.fragrance_type
+      .show-table__text
+        .part-title
+          　説　明　
+        = @aroma.explain_text
+  = render "footer"
