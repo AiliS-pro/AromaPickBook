@@ -7,11 +7,11 @@
       - @aromas.each do |aroma|
         .item
           .item__img
-            = image_tag aroma.image.url
+            -# = image_tag aroma.image.url
           .item__name 
             = aroma.name
           .item__btns
-            = link_to "編集", root_path, class: "edit-btn"
+            = link_to "編集", edit_aroma_path(aroma.id), class: "edit-btn"
             .delete-btn
               削除
 

@@ -1,11 +1,11 @@
 .index-main {
-  width: 100vw;
+  width: calc(100vw - 400px);
   margin: 80px 200px;
   .items {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: calc(100% - 380px);
+    width: 1048px;
   }
   .item {
     border: 1px solid black;
