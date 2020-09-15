@@ -1,6 +1,11 @@
 .header
-  = link_to root_path, class: "title" do
-    .title__1
+  = link_to root_path, class: "title-left" do
+    .title-left__1
       Aroma
-    .title__2
+    .title-left__2
       pict book.
+  = link_to new_aroma_path, class: "title-right" do
+    .title-right__1
+      new 
+    .title-right__2
+      aroma
