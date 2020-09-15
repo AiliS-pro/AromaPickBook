@@ -1,37 +1,42 @@
 .wrapper
+
   = render "header"
 
   .index-main
     .items
-      .item
-        .item__img
-        .item__name
-        .item__btns
-          .edit-btn
-          .delete-btn
-      .item
-        .item__img
-        .item__name
-        .item__btns
-          .edit-btn
-          .delete-btn
-      .item
-        .item__img
-        .item__name
-        .item__btns
-          .edit-btn
-          .delete-btn
-      -# .item
-      -#   .item__img
-      -#   .item__name
-      -#   .item__btns
-      -#     .edit-btn
-      -#     .delete-btn
-      -# .item
-      -#   .item__img
-      -#   .item__name
-      -#   .item__btns
-      -#     .edit-btn
-      -#     .delete-btn
+      - @aromas.each do |aroma|
+        .item
+          .item__img
+            = image_tag aroma.img
+          .item__name 
+            = aroma.name
+          .item__btns
+            = link_to "編集", root_path, class: "edit-btn"
+            .delete-btn
+              削除
+        .item
+          .item__img
+          .item__name
+          .item__btns
+            .edit-btn
+            .delete-btn
+        .item
+          .item__img
+          .item__name
+          .item__btns
+            .edit-btn
+            .delete-btn
+        -# .item
+        -#   .item__img
+        -#   .item__name
+        -#   .item__btns
+        -#     .edit-btn
+        -#     .delete-btn
+        -# .item
+        -#   .item__img
+        -#   .item__name
+        -#   .item__btns
+        -#     .edit-btn
+        -#     .delete-btn
 
   = render "footer"

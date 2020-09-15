@@ -18,16 +18,38 @@
       background-color: coral;
       width: 200px;
       height: 150px; 
+      border-bottom: 1px solid black;
     }
     &__name {
       background-color: cornsilk;
-      width: 200px;
+      width: 195px;
       height: 40px; 
+      line-height: 40px;
+      padding-left: 5px;
+      border-bottom: 1px solid black;
     }
     &__btns {
-      background-color: crimson;
       width: 200px;
-      height: 60px; 
+      height: 58px;
+      display: flex;
+      border-bottom: 1px solid black;
+      .edit-btn {
+        width: 100px;
+        height: 58px;
+        text-align: center;
+        line-height: 58px;
+        border-right: 1px solid black;
+        font-size: 20px;
+        color: green;
+      }
+      .delete-btn {
+        width: 100px;
+        height: 58px;
+        text-align: center;
+        line-height: 58px;
+        font-size: 20px;
+        color: green;
+      }
     }
   }
 }
