@@ -8,6 +8,7 @@
         .item
           = link_to aroma_path(aroma.id), class: "item__img" do
             .item__img
+              = image_tag aroma.image.thumb_index.url
           .item__name 
             = aroma.name
           .item__btns

@@ -6,7 +6,6 @@ class CreateAromas < ActiveRecord::Migration[6.0]
       t.string :fragrance_note
       t.string :fragrance_type
       t.text :explain_text
-      t.string :image
       t.timestamps
     end
   end

@@ -6,7 +6,7 @@
     .table
       = form_with model: @aroma, local: true do |f|
         .table__picture
-          写真
+          = f.file_field :image, class: "input", required: "required"
         .table__name
           = f.text_field :name, placeholder: "精油名(16文字まで)", class: "input", required: "required"
         .table__family-name

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_13_145412) do
+ActiveRecord::Schema.define(version: 2020_09_16_100043) do
 
   create_table "aromas", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name"
@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 2020_09_13_145412) do
     t.string "fragrance_note"
     t.string "fragrance_type"
     t.text "explain_text"
-    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "image"
   end
 
 end

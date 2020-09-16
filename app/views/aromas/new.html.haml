@@ -6,7 +6,10 @@
     .table
       = form_with model: @aroma, local: true do |f|
         .table__picture
-          写真
+          = f.label :image do
+            .form-image
+              = f.file_field :image, class: "input-image", style: "display: none;"
+              = f.hidden_field :image_cache, class: "input-image", style: "display: none;"
         .table__name
           = f.text_field :name, placeholder: "精油名(16文字まで)", class: "input", required: "required"
         .table__family-name
