@@ -6,10 +6,15 @@
     .table
       = form_with model: @aroma, local: true do |f|
         .table__picture
-          = f.label :image do
+          = f.label :image, id: "imageInput" do
             .form-image
               = f.file_field :image, class: "input-image", style: "display: none;"
               = f.hidden_field :image_cache, class: "input-image", style: "display: none;"
+              #formInput
+            - if @aroma.image.url present?
+              .form_image
+                = image_tag @aroma.image.url
+              
         .table__name
           = f.text_field :name, placeholder: "精油名(16文字まで)", class: "input", required: "required"
         .table__family-name
@@ -22,4 +27,18 @@
           = f.text_area :explain_text, placeholder: "テキスト(100文字まで)", class: "input-text", require: "required"
         = f.submit "追加", class: "submit-btn"
 
+
+        :javascript
+          var imageInput = document.getElementById("imageInput");
+          imageInput.addEventListener('change', function(showImage) {
+            var file = showImage.target.files;
+            var reader = new FileReader();
+            reader.readAsDataURL(file[0]);
+           
+            reader.onload = function() {
+              var dataUrl = reader.result;
+              document.getElementById("formInput").innerHTML = "<img src='" + dataUrl + "' style= 'height: 450px; width: 600px; border: 1px solid black;'>"; 
+              console.log("読み込みはOK");
+            };
+          }, false);
   = render "footer"
