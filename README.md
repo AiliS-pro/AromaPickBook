@@ -33,4 +33,4 @@ Things you may want to cover:
 |fragrance_note|string|
 |fragrance_type|string|
 |explain_text|text|
-|img|longblob|null :false|
+|image|string|null :false|
