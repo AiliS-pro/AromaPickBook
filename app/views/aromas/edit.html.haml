@@ -10,9 +10,8 @@
             .form-image
               = f.file_field :image, class: "input-image", style: "display: none;"
               = f.hidden_field :image_cache, class: "input-image", style: "display: none;"
-            #formInput
-              .form-image
-                = image_tag @aroma.image.url
+              #formInput
+                = image_tag @aroma.image.thumb_show.url
               
             
                 
@@ -26,7 +25,7 @@
           = f.text_field :fragrance_type, placeholder: "香りのタイプ(16文字まで)", class: "input", required: "required"
         .table__text
           = f.text_area :explain_text, placeholder: "テキスト(100文字まで)", class: "input-text", require: "required"
-        = f.submit "追加", class: "submit-btn"
+        = f.submit "編集", class: "submit-btn"
 
 
         :javascript
