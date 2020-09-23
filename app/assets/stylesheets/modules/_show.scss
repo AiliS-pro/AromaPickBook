@@ -57,7 +57,11 @@
     margin-right: 10px;
     font-size: 20px;
     line-height: 80px;
+    word-wrap: break-all;
     border-right: 1px solid black;
     font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  }
+  .part-form {
+    width: 470px;
   }
 }

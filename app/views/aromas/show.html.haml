@@ -9,7 +9,8 @@
       .show-table__name
         .part-title
           　名　前　
-        = @aroma.name
+        .part-form
+          = @aroma.name
       .show-table__family-name
         .part-title
           　科　名　
@@ -17,13 +18,16 @@
       .show-table__fragrance-note
         .part-title
           　ノート　
-        = @aroma.fragrance_note
+        .part-form
+          = @aroma.fragrance_note
       .show-table__fragrance-type
         .part-title
           香りタイプ
-        = @aroma.fragrance_type
+        .part-form
+          = @aroma.fragrance_type
       .show-table__text
         .part-title
           　説　明　
-        = @aroma.explain_text
+        .part-form
+          = @aroma.explain_text
   = render "footer"
