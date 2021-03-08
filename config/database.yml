@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: AromaPickBook_production
-  username: AromaPickBook
-  password: <%= ENV['AROMAPICKBOOK_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
