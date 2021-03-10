@@ -8,7 +8,6 @@
     width: 1048px;
   }
   .item {
-    background-color: cornsilk;
     width: 200px;
     height: 250px;
     margin-right: 30px;
@@ -16,9 +15,10 @@
     margin-bottom: 90px;
     &__img {
       width: 200px;
-      height: 152px; 
+      height: 150px; 
     }
     &__name {
+      background-color: cornsilk;
       width: 195px;
       height: 40px; 
       line-height: 40px;
